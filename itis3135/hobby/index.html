@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Life Through My Lens | What Is Film Photography?</title>
+      <link rel="icon" href="images/favicon.png" type="image/x-icon">
+     
+
+      <!-- the classes provide reusable styling for my page -->
+      <style>
+        /* Black and white are avoided to maintain the soft, forest and pale green color scheme. */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Arial, Helvetica, sans-serif;
+            background-color: #e5efdf;
+            color: #234331;
+            line-height: 1.7;
+        }
+
+        header {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #214b35;
+            color: #f0f6eb;
+            text-align: center;
+            padding: 30px 20px;
+            border-bottom: 6px solid #a8c99b;
+        }
+
+        header h1 {
+            margin: 0;
+            font-family:  Georgia, serif;
+            font-size: 2.5em;
+        }
+
+        header p {
+            margin-botttom: 0;
+            font-style: italic;
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 8px;
+            padding: 18px;
+            background-color: #c6ddbc;
+        }
+
+        nav a {
+            color: #214b35;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 13px;
+            border-radius: 5px;
+        }
+
+        nav a:hover,
+        nav a:focus {
+            background-color: #214b35;
+            color: #f0f6eb;
+        }
+
+        nav a[aria-current="page"] {
+            background-color: #376b49;
+            color: #f0f6eb;
+        }
+
+        main {
+            max-width: 1000px;
+            min-height: 500px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            padding: 30px;
+            background-color: #f5f9f1;
+            border: 2px solid #b4d0a9;
+            border-radius: 12 px;
+            box-shadow: 0 4px 10px rgba(33, 75, 53, 0.12);
+        }
+
+        section h2 {
+            color: #28583c;
+            font-family: Georgia, serif;
+            font-size: 2em;
+            border-bottom: 3px solid #8bb67b;
+        }
+
+        h3 {
+            color: #376b49;
+        }
+
+        figure {
+            max-width: 650px;
+            margin: 25px auto;
+            padding: 15px;
+            text-align: center;
+            background-color: #e0ecd9;
+            border-radius: 8px;
+        }
+
+        .photo-placeholder {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 240px;
+            padding: 20px;
+            background-color: #cddbc;
+            border: 2px dashed #376b49;
+            color: #214b35;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        figure img {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        figcaption {
+            margin-top: 10px;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        .image-prompt {
+            font-size: 0.9em;
+            margin-top: 8px;
+        }
+
+        .film-facts {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        fact {
+            flex: 1 1 200px;
+            padding: 15px;
+            background-color: #e0ecd9;
+            border-left: 5px solid #56845c;
+            border-radius: 5px;
+        }
+
+        .divider {
+            color: #376b49;
+            text-align: center;
+            font-size: 1.4em;
+            margin: 20px 0;
+        }
+
+        .section-link {
+            color: #28583c;
+            font-weight: bold;
+        }
+
+        .section-link:hover,
+        .section-link:focus {
+            color: #56845c;
+        }
+
+        .ai-list li {
+            margin-bottom: 12px;
+        }
+
+        footer {
+            max-width: 1200px;
+            margin: 40px auto 0;
+            padding: 25px 20px;
+            background-color: #214b35;
+            color: #f0f6eb;
+            text-align: center;
+        }
+
+        footer a {
+            color: #d0e8c5;
+        }
+
+        footer a:hover,
+        footer a:focus {
+            color: #f0f6eb;
+        }
+
+        .validators {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+            margin: 20px 0;
+        }
+
+        .validators a {
+            display: inline-block;
+            padding: 8px 12px;
+            border-radius: 5px;
+            background-color: #e5efdf;
+            color: #214b35;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .validators a:hover,
+        .validators a:focus {
+            background-color: #c6ddbc;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            section {
+                padding: 20px;
+            }
+
+            section h2 {
+                font-size: 1.6em;
+            }
+        }
+      </style>
+        <script src="https://divonbriesen.github.io/teaching/tools/standards-check.js" defer>
+        </script>
+        <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Life Through My Lens</h1>
+        <p>Capturing all of my moments, one frame at a time.</p>
+
+        <nav aria-label="Hobby site navigation">
+            <a href="#what" data-section="what" aria-current="page">What</a>
+            <a href="#who" data-section="who">Who</a>
+            <a href="#when" data-section="when">When</a>
+            <a href="#where" data-section="where">Where</a>
+            <a href="#how" data-section="how">How</a>
+            <a href="#why" data-section="why">Why</a>
+            <a href="#ai-prompts" data-selection="ai-prompts">AI Prompts</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- WHAT: Home page -->
+        <section id="what">
+            <h2>What Is Film Photography?</h2>
+
+            <p>Film photography is a way of capturing pictures using a camera that 
+                records images on photographic film instead of a digital sensor. 
+                The film has to be developed before you can see the final photographs, 
+                which makes the process a little more exciting.
+            </p>
+
+            <p>Unlike digital photography, film gives you a limited number of 
+                pictures per roll. You have to think about lighting, composition, and 
+                timing instead of taking fifty pictures of the same thing. Okay, 
+                maybe just five.
+            </p>
+
+            <figure>
+                <img src="images/ava_cruise.JPG" alt="Ava on Cruise">
+
+                <figcaption>A friend on a cruise.</figcaption>
+            </figure>
+
+            <div class="film-facts">
+                <div class="fact">
+                    <h3>Film Rolls</h3>
+                    <p>
+                        Each roll has a limited number of exposures, so every
+                        show counts.
+                    </p>
+                </div>
+                <div class="fact">
+                    <h3>The Surprise</h3>
+                    <p>You usually wait until development to see how your photographs 
+                        turned out.
+                    </p>
+                </div> 
+            </div> <!-- this div element groups my film-facts together -->
+
+            <p class="divider" aria-hidden="true">~</p>
+            <p>Explore the other sections to learn about film photography,
+                when and where to shoot, how to get started, and why this hobby is
+                worth trying!
+            </p>
+        </section> <!-- this section holds this id to keep everything grouped together and hidden if necessary -->
+
+        <!-- WHO -->
+         <section id="who" hidden>
+            <h2>Who Is Behind the Camera?</h2>
+
+            <p>I'm interested in film photography because I enjoy the creative side
+                of capturing moments. I like the idea of turning ordinary places
+                and experiences into photographs that feel meaningful (and look great).
+            </p>
+
+            <p>Film photography is for anyone who enjoys experimenting with cameras,
+                 being creative, or collecting memories. You do not have to be a 
+                 professional or own expensive equipment to start.
+            </p>
+
+            <figure>
+                <img src="images/party.PNG" alt="after night out.">
+
+                <figcaption>From a party.</figcaption>
+                        </figure>
+
+            <h3>What Makes a Film Photographer?</h3>
+            <ul>
+                <li>Curosity about lighting, colors, and composition.</li>
+                <li>Patience when taking, and especially developing, pictures.</li>
+                <li>A willingness to experiment and learn from mistakes.</li>
+            </ul>
+
+            <p>You do not need to know everything about photography to enjoy it. 
+                Half the fun is figuring things out as you go.
+            </p>
+
+            <p class="divider" aria-hidden="true">~</p>
+         </section>
+
+         <!-- WHEN -->
+          <section id="when" hidden>
+            <h2>When Is the Best Time to Take A Pic?</h2>
+
+            <p>Film photography can be enjoyed all year, but different times of day and
+                 seasons create different moods. Lighting matters because film can be less
+                 forgiving when a scene is too dark or too bright.
+            </p>
+
+            <h3>Golden Hour</h3>
+            <p>The time around sunrise or sunset often creates soft, warm light. It works well
+                 for portraits, outdoor scenes, and photographs with a nostalgic feel.
+            </p>
+
+            <h3>Cloudy Days</h3>
+            <p>Clouds often direct sunlight and reduce harsh shadows. This can be useful 
+                for portraits and street photography.
+            </p>
+
+            <figure>
+                <img src="images/sunset_cruise.JPG" alt="Golden Hour on the cruise">
+                <figcaption>Golden Hour</figcaption>
+            </figure>
+
+            <h3>Seasonal Inspiration</h3>
+            <ul>
+                <li><strong>Spring: </strong>Flowers, greenery, and brighter colors.</li>
+                <li><strong>Summer: </strong>Road trips, beach days, and long evenings.</li>
+                <li><strong>Fall: </strong>Colorful leaves and warm tones.</li>
+                <li><strong>Winter: </strong>Interesting shadows, bare trees, and quiet streets.</li>
+            </ul>
+
+            <p class="divider" aria-hidden="true">~</p>
+          </section>
+
+          <!-- WHERE -->
+           <section id="where" hidden>
+            <h2>Where Should You Take Pictures?</h2>
+
+            <p>You do not need a fancy destination to take good photographs. 
+                Interesting pictures can come from places you visit every day.
+            </p>
+
+            <h3>Nature</h3>
+            <p>Parks, gardens, and walking trails offer natural light, greenery, flowers, 
+                and interesting textures.
+            </p>
+
+            <h3>City Streets</h3>
+            <p>Buildings, signs, storefronts, and honestly just everyday life can make
+                 great subjects for street photography.
+            </p>
+
+            <figure>
+                <img src="images/piglet.PNG" alt="a piglet at lazy five ranch!">
+                <figcaption>Piglet</figcaption>
+            </figure>
+
+            <h3>Other Places to Explore</h3>
+            <ul>
+                <li>Coffee shops with interesting windows and lighting.</li>
+                <li>Vintage shops with colorful displays.</li>
+                <li>Beaches, lakes, and scenic outdoor locations.</li>
+            </ul>
+            
+            <p>Always respect people's privacy when photographing them,
+                 and ask permission when appropriate.
+            </p>
+
+           <p class="divider" aria-hidden="true">~</p>
+           </section>
+
+           <!-- HOW -->
+            <section id="how" hidden>
+                <h2>How Do You Get Started?</h2>
+
+                <p>Getting started with film photography does not have
+                     to be complicated. A compatible film camera, a roll of film, and
+                     and some patience are enough to begin learning.
+                </p>
+
+                <h3>Step 1: Choose a Camera</h3>
+                <p>Start with a camera you can afford and learn how it works.
+                     A simple point-and-shoot camera can be a good option for beginners
+                      so this would be a disposable film camera or the 30 dollar
+                      ones that Kodak sells!
+                </p>
+
+                <h3>Step 2: Load Your Film (For Non-Disposable Cameras)</h3>
+                <p>Check the camera instructions and use film that is compatible 
+                    with it. Follow the loading instructions carefully to avoid
+                    wasting a roll.
+                </p>
+
+                <figure>
+                <img src="images/film_cam.jpg" alt="the film camera i use">
+                <figcaption>Kodak Ektar H35 Half Frame</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/film.jpg" alt="the film i normally get">
+                <figcaption>Kodak 200 Gold film</figcaption>
+            </figure>
+
+            <h3>Step 3: Practice and Develop</h3>
+            <ol>
+                <li>Pay attention to lighting and framing.</li>
+                <li>Keep track of the film you use.</li>
+                <li>Finish the roll and take it to a photo lab for development.</li>
+                <li>Review your pictures and learn from the results.</li>
+            </ol>
+
+            <p>Remember that mistakes happen. Sometimes the blurry or darker pictures ends
+                 up being your favorite one anyway :D!
+            </p>
+
+           <p class="divider" aria-hidden="true">~</p>
+            </section>
+
+            <!-- WHY -->
+             <section id="why" hidden>
+                <h2>Why Film Photography?</h2>
+
+                <p>Film photography encourages you to slow down and pay attention to the 
+                    little details around you. Instead of instantly checking a screen, 
+                    you can focus on the moment you are trying to capture.
+                </p>
+
+                <h3>It Makes Moments Feel Special</h3>
+                <p>Because each roll has a limited number of exposures, taking a picture 
+                    can feel more intentional. Waiting for the photos to be developed also
+                     makes seeing the results more exciting.
+                </p>
+
+                <h3>It Encourages Creativity</h3>
+                <p>Film types, lighting, camera settings, and composition can all change 
+                    the final result. Experimenting with these details helps photographers 
+                    develop their own style.
+                </p>
+
+                <figure>
+                <img src="images/taking_pictures.JPG" alt="my friends taking a picture of me taking a picture of them aka my favorite film photo.">
+                <figcaption>One of my favorite photos I've taken on the film camera.</figcaption>
+            </figure>
+
+            <h3>My Favorite Parts</h3>
+            <ul>
+                <li>The nostalgic look of film photographs.</li>
+                <li>The excitement of waiting for my pictures to be developed.</li>
+                <li>Finding the beauty in ordinary moments.</li>
+            </ul>
+
+            <p>Film photography is about enjoying the process and making memories that 
+                last longer than a camera roll on your phone.
+            </p>
+
+            <p class="divider" aria-hidden="true">~</p>
+             </section>
+
+             <section id="ai-prompts" hidden>
+                <h2>AI Prompts and Credits</h2>
+
+                <p>AI assistance was used to help with the information written for this 
+                    website as well as to fix any bugs or give me any advice on what could be 
+                    better.
+                </p>
+
+                <h3>Prompt 1: Information on the Website</h3>
+                <p><em>"Give me the gist on what I should write for a website about 
+                    my hobby which is film photography. I have to include sections such as 
+                    What, Who, When, Where, How, Why and of course the AI Prompts section."
+                </em></p>
+
+                <h3>Prompt 2: Looking Over</h3>
+                <p><em>"Can you look over this code and tell me what I could do 
+                    to make it visually more appealing. Could you also check for any errors 
+                    or places where I could condence my code?"
+                </em></p>
+
+                <h3>Image Credits</h3>
+                <p>The images on my site are all my own film pictures that I have taken. 
+                    The only two that don't belong from me are google images of the camera I use 
+                    as well as the film I regularly buy.
+                </p>
+
+                <p class="divider" aria-hidden="true">~</p>
+             </section>
+    </main>
+
+    
+<footer>
+    <p>Life Through My Lens | Film Photography</p>
+
+    <p>
+        <em>Capturing all of my moments, one frame at a time.</em>
+    </p>
+     <p>
+        Designed by
+        <a href="../christasmithsdesigns.com.html">Christa Smith's Designs</a>
+    </p>
+</footer>
+
+
+    <script src="scripts/include.min.js"></script>
+    <script src="https://divonbriesen.github.io/teaching/tools/standards-check.js" defer></script>
+
+     
+<script>
+    const navigationLinks = document.querySelectorAll("[data-section]");
+    const pageSections = document.querySelectorAll("main section");
+
+    function showSection(sectionId) {
+        let sectionFound = false;
+
+        pageSections.forEach(function (section) {
+            const isSelected = section.id === sectionId;
+            section.hidden = !isSelected;
+
+            if (isSelected) {
+                sectionFound = true;
+            }
+        });
+
+        if (!sectionFound) {
+            sectionId = "what";
+
+            pageSections.forEach(function (section) {
+                section.hidden = section.id !== sectionId;
+            });
+        }
+
+        // Update the browser tab title to match the visible section heading.
+        const visibleSection = document.getElementById(sectionId);
+
+        if (visibleSection) {
+            const heading = visibleSection.querySelector("h2");
+
+            if (heading) {
+                document.title = "Life Through My Lens | " + heading.textContent;
+            }
+        }
+
+        navigationLinks.forEach(function (link) {
+            if (link.dataset.section === sectionId) {
+                link.setAttribute("aria-current", "page");
+            } else {
+                link.removeAttribute("aria-current");
+            }
+        });
+    }
+
+    navigationLinks.forEach(function (link) {
+        link.addEventListener("click", function (event) {
+            event.preventDefault();
+            const sectionId = link.dataset.section;
+
+            showSection(sectionId);
+            window.location.hash = sectionId;
+        });
+    });
+
+    window.addEventListener("hashchange", function () {
+        const sectionId = window.location.hash.substring(1);
+        showSection(sectionId || "what");
+    });
+
+    showSection(window.location.hash.substring(1) || "what");
+</script>
