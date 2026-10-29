@@ -1,0 +1,42 @@
+/*main page styling*/
+body {
+    background-color: #F2D3CB;
+    color: #4D382F;
+    font-family: Arial, sans-serif;
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* headings */
+h2 {
+    color: #4D382F;
+    text-align: center;
+}
+
+/* links */
+a {
+    color: #4D382F;
+}
+
+a:hover {
+    color: #967A6C;
+}
+
+/* main content */
+main {
+    margin: 30px auto;
+    padding: 10px;
+}
+
+/* horizontal lines */
+hr {
+    border: 3px solid #967A6C;
+}
+
+/* footer */
+footer {
+    margin-top: 40px;
+    text-align: center;
+}

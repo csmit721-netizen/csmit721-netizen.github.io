@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Christa Smith's Crazy Snake | ITIS3135 | Website Evaluations</title>
+        <link rel="icon" href="images/favicon.ico">
+
+
+        <script src="https://divonbriesen.github.io/teaching/tools/standards-check.js" defer>
+        </script>
+
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #F2D3CB;
+                color: #4D382F;
+                margin: 0 auto;
+                max-width: 1200px;
+                line-height: 1.6;
+            }
+
+            h2, h3 {
+                font-family: Georgia, serif;
+            }
+
+            main {
+                max-width: 900px;
+                margin: 30px auto;
+                padding: 20px;
+            }
+
+            main h2 {
+                text-align: center;
+            }
+            
+            /*these classes distinguish the two website evaluations. */
+            section {
+                background-color: #fffaf7;
+                padding: 25px;
+                margin-bottom: 30px;
+                border-radius: 10px;
+                box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+            }
+
+            section h3 {
+                border-bottom: 3px solid #967A6C;
+                padding-bottom: 10px;
+            }
+
+            section h3 a {
+                color: #4D382F;
+            }
+
+            section h3 a:hover {
+                color: #967A6C;
+            }
+
+            li {
+                margin-bottom: 12px;
+            }
+
+            .bad {
+                border-top: 8px solid #b94b4b;
+            }
+
+            .good {
+                border-top: 8px solid #43845b;
+            }
+
+            @media (max-width: 600px) {
+                main {
+                    padding: 12px;
+                }
+
+                section {
+                    padding: 18px;
+                }
+            }
+        </style>
+
+        <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+
+    </head>
+
+    <body>
+        <!--these divs load the shared header and footer components-->
+        <div data-include="components/header.html"></div>
+
+        <main>
+            <h2>Website Evaluations</h2>
+
+            <p>The CRAP principles are Contrast, Repetition, Alignment, 
+                and Proximity. They help explain what makes a website 
+                easy and visually appealing.
+            </p>
+
+
+            <!-- This inline SVG is a decorative image representing weather. -->
+        <svg xmlns="http://www.w3.org/2000/svg"
+             viewBox="0 0 120 70"
+             width="120"
+             role="img"
+             aria-label="Cloud and sun weather illustration">
+            <circle cx="83" cy="25" r="16" fill="#e6ad38"/>
+            <path d="M25 54 C8 54 8 34 26 32
+                     C29 13 55 12 63 30
+                     C83 27 91 51 72 55 Z"
+                  fill="#8aa7bb" stroke="#4D382F" stroke-width="2"/>
+        </svg>
+
+        <!--made a class for this to just section off the bad website-->
+        <section class="bad">
+                <h3>
+                    <a href="https://www.accuweather.com/en/us/harrisburg/28075/weather-forecast/2113891"
+                   target="_blank" rel="noopener noreferrer">
+                AccuWeather</a>
+                </h3>
+
+                <ul>
+                    <li>
+                        <strong>Contrast:</strong> The different colors 
+                        help separate information, but the number of 
+                        elements competing for attention can make the 
+                        page feel cluttered.
+                    </li>
+                    <li>
+                        <strong>Repetition:</strong> Weather information and 
+                        navigation options repeat throughout the page. This creates 
+                        consistency, but there is a lot to look at.
+                    </li>
+                    <li>
+                        <strong>Alignment:</strong> The page uses organized 
+                        sections, but the different content areas can make it 
+                        harder to focus on the forecast.
+                    </li>
+                    <li>
+                        <strong>Proximity:</strong> Related weather details 
+                        are grouped together, but advertisements and other 
+                        content can distract from the forecast.
+                    </li>
+                </ul>
+            </section>
+
+        <!--made a class for this to just section off the good website-->
+            <section class="good">
+                <h3>
+                   <a href="https://www.lego.com/en-us"
+                   target="_blank" rel="noopener noreferrer">
+                    LEGO
+                </a> 
+                </h3>
+
+                <ul>
+                    <li>
+                        <strong>Contrast:</strong> LEGO uses bright colors, 
+                        especially its recognizable red branding, to make 
+                        important buttons and products stand out.
+                    </li>
+                    <li>
+                        <strong>Repetition:</strong> Product cards, images, 
+                        buttons, and headings follow a consistent style throughout 
+                        the shopping experience.
+                    </li>
+                    <li>
+                        <strong>Alignment:</strong> Producrs are arranged 
+                        in organized tows and sections, making the page 
+                        easier to browse.
+                    </li>
+                    <li>
+                        <strong>Proximity:</strong> Product images, names, 
+                        prices, and shopping buttons appear close together, 
+                        making it easy to find information about each set.
+                    </li>
+                </ul>
+            </section>
+        </main>
+
+        <div data-include="components/footer.html"></div>
+
+        <script src="scripts/include.min.js"></script>
+    </body>
+</html>
