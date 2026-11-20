@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christa Smith's Crazy Snake | ITIS3135 | Christa Smith: Introduction Form</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/default.css">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- This div loads the shared header component so every page uses the same site heading and navigation. -->
+    <div data-include="components/header.html"></div>
+
+    <hr class="page-divider">
+
+    <main>
+        <h2>Christa Smith: Introduction Form</h2>
+        <h3>Please Submit the Form Below.</h3>
+
+        <form id="introduction-form">
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName"
+                    value="Christa" placeholder="First name" required>
+
+                <label for="middleName">Middle Name or Initial (Optional):</label>
+                <input type="text" id="middleName" name="middleName"
+                    placeholder="Middle name">
+
+                <label for="nickname">Nickname/Preferred Name (Optional):</label>
+                <input type="text" id="nickname" name="nickname"
+                    placeholder="Preferred name">
+
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName"
+                    value="Smith" placeholder="Last name" required>
+
+                <label for="acknowledgment">Acknowledgment Statement:</label>
+                <textarea id="acknowledgment" name="acknowledgment"
+                    placeholder="Enter your acknowledgment" required>I understand that this is a public document, and I won't put anything here I wouldn't want anyone to see.</textarea>
+
+                <label for="acknowledgmentDate">Acknowledgment Date:</label>
+                <input type="date" id="acknowledgmentDate"
+                    name="acknowledgmentDate" value="2026-08-24" required>
+
+                <label for="adjectives">Mascot Adjective:</label>
+                <input type="text" id="adjectives" name="adjectives"
+                    value="Crazy" placeholder="Enter an adjective" required>
+
+                <label for="animal">Mascot Animal:</label>
+                <input type="text" id="animal" name="animal"
+                    value="Snake" placeholder="Enter an animal" required>
+
+                <label for="prettyNameDivider">Name Divider:</label>
+                <input type="text" id="prettyNameDivider"
+                    name="prettyNameDivider" value="~"
+                    placeholder="Example: ~ or ♥" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Picture Information</legend>
+
+                <p>Current picture: mirrorselfie.jpg</p>
+
+                <img src="images/mirrorselfie.jpg"
+                    alt="Digi cam mirror selfie"
+                    class="preview-image" id="image-preview">
+
+                <label for="img">Upload a Different Picture (Optional):</label>
+                <input type="file" id="img" name="img" accept="image/*">
+
+                <label for="pictureAlt">Picture Description:</label>
+                <input type="text" id="pictureAlt" name="pictureAlt"
+                    value="Digi cam mirror selfie"
+                    placeholder="Describe the picture" required>
+
+                <label for="caption">Picture Caption:</label>
+                <input type="text" id="caption" name="caption"
+                    value="Digi cam mirror selfie."
+                    placeholder="Enter a picture caption" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Personal Background</legend>
+
+                <label for="personalStatement">Personal Statement:</label>
+                <textarea id="personalStatement" name="personalStatement"
+                    placeholder="Tell us about yourself" required>I am a senior computer science student with a concentration in cyber security while also working toward a minor in criminal justice. My goals include getting my Bachelor's and then working my way onto my Master's. I also plan to knock down a bunch of certifications this winter. I love going out, reading, playing guitar, and hanging out with friends. My favorite genre of music is rock. I love The Clash.</textarea>
+
+                <label for="personalBackground">Personal Background:</label>
+                <textarea id="personalBackground" name="personalBackground"
+                    placeholder="Enter your personal background" required>Born in OKC.</textarea>
+
+                <label for="professionalBackground">Professional Background:</label>
+                <textarea id="professionalBackground" name="professionalBackground"
+                    placeholder="Enter your professional background" required>I am currently a Probation Office Tech in Charlotte!</textarea>
+
+                <label for="academicBackground">Academic Background:</label>
+                <textarea id="academicBackground" name="academicBackground"
+                    placeholder="Enter your academic background" required>Associate's in Arts, 2025.</textarea>
+
+                <label for="primaryWorkComputer">Primary Work Computer:</label>
+                <input type="text" id="primaryWorkComputer"
+                    name="primaryWorkComputer"
+                    value="HP ZBook laptop, Windows 11, X G2i."
+                    placeholder="Enter your primary computer" required>
+
+                <label for="primaryWorkLocation">Primary Work Location:</label>
+                <input type="text" id="primaryWorkLocation"
+                    name="primaryWorkLocation" value="My house."
+                    placeholder="Enter your primary work location" required>
+
+                <label for="alternateComputerLocation">Alternate Computer and Location:</label>
+                <input type="text" id="alternateComputerLocation"
+                    name="alternateComputerLocation"
+                    value="My desktop and the library."
+                    placeholder="Enter your alternate computer and location" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Courses</legend>
+
+                <!-- These div elements group each course. The course-entry class is needed so JavaScript can add, copy, and remove each course as one unit. The courses-container id lets JavaScript find the group. -->
+                <div id="courses-container">
+
+                    <div class="course-entry">
+                        <label for="department1">Department:</label>
+                        <input type="text" id="department1" name="department" value="ITSC" placeholder="Department" required>
+
+                        <label for="courseNumber1">Course Number:</label>
+                        <input type="text" id="courseNumber1" name="courseNumber" value="3146" placeholder="Course number" required>
+
+                        <label for="courseTitle1">Course Name:</label>
+                        <input type="text" id="courseTitle1" name="courseTitle" value="Introduction to Operating Systems & Networking" placeholder="Course name" required>
+
+                        <label for="reasonForTaking1">Reason for Taking:</label>
+                        <textarea id="reasonForTaking1" name="reasonForTaking" placeholder="Why are you taking this course?" required>Requirement. I am excited to actually learn more about cybersecurity.</textarea>
+                    </div>
+
+                    <div class="course-entry">
+                        <label for="department2">Department:</label>
+                        <input type="text" id="department2" name="department" value="ITIS" placeholder="Department" required>
+
+                        <label for="courseNumber2">Course Number:</label>
+                        <input type="text" id="courseNumber2" name="courseNumber" value="3135" placeholder="Course number" required>
+
+                        <label for="courseTitle2">Course Name:</label>
+                        <input type="text" id="courseTitle2" name="courseTitle" value="Front End Web Application Development" placeholder="Course name" required>
+
+                        <label for="reasonForTaking2">Reason for Taking:</label>
+                        <textarea id="reasonForTaking2" name="reasonForTaking" placeholder="Why are you taking this course?" required>Requirement. I am really intrigued by this class.</textarea>
+                    </div>
+
+                    <div class="course-entry">
+                        <label for="department3">Department:</label>
+                        <input type="text" id="department3" name="department" value="ITSC" placeholder="Department" required>
+
+                        <label for="courseNumber3">Course Number:</label>
+                        <input type="text" id="courseNumber3" name="courseNumber" value="4214" placeholder="Course number" required>
+
+                        <label for="courseTitle3">Course Name:</label>
+                        <input type="text" id="courseTitle3" name="courseTitle" value="Usable Privacy & Security" placeholder="Course name" required>
+
+                        <label for="reasonForTaking3">Reason for Taking:</label>
+                        <textarea id="reasonForTaking3" name="reasonForTaking" placeholder="Why are you taking this course?" required>Requirement. I feel like this class will be really introspective.</textarea>
+                    </div>
+
+                    <div class="course-entry">
+                        <label for="department4">Department:</label>
+                        <input type="text" id="department4" name="department" value="ITSC" placeholder="Department" required>
+
+                        <label for="courseNumber4">Course Number:</label>
+                        <input type="text" id="courseNumber4" name="courseNumber" value="3200" placeholder="Course number" required>
+
+                        <label for="courseTitle4">Course Name:</label>
+                        <input type="text" id="courseTitle4" name="courseTitle" value="Introduction to Information Security & Privacy" placeholder="Course name" required>
+
+                        <label for="reasonForTaking4">Reason for Taking:</label>
+                        <textarea id="reasonForTaking4" name="reasonForTaking" placeholder="Why are you taking this course?" required>Requirement. I am very excited about this one because it goes more in depth into cybersecurity, which is my main focus.</textarea>
+                    </div>
+
+                    <div class="course-entry">
+                        <label for="department5">Department:</label>
+                        <input type="text" id="department5" name="department" value="CJUS" placeholder="Department" required>
+
+                        <label for="courseNumber5">Course Number:</label>
+                        <input type="text" id="courseNumber5" name="courseNumber" value="2340" placeholder="Course number" required>
+
+                        <label for="courseTitle5">Course Name:</label>
+                        <input type="text" id="courseTitle5" name="courseTitle" value="Criminological Theory" placeholder="Course name" required>
+
+                        <label for="reasonForTaking5">Reason for Taking:</label>
+                        <textarea id="reasonForTaking5" name="reasonForTaking" placeholder="Why are you taking this course?" required>Another class for my minor! I am excited because I find myself not getting disinterested at all in these classes.</textarea>
+                    </div>
+
+                </div>
+
+                <button type="button" id="add-course">Add Course</button>
+            </fieldset>
+
+            <fieldset>
+                <legend>Additional Information</legend>
+
+                <label for="quote">Favorite Quote:</label>
+                <textarea id="quote" name="quote"
+                    placeholder="Enter your favorite quote" required>“Hope is the thing with feathers…”</textarea>
+
+                <label for="quoteAuthor">Quote Author:</label>
+                <input type="text" id="quoteAuthor" name="quoteAuthor"
+                    value="Emily Dickinson" placeholder="Quote author" required>
+
+                <label for="funnyItem">Funny Thing (Optional):</label>
+                <input type="text" id="funnyItem" name="funnyItem"
+                    placeholder="Something funny about you">
+
+                <label for="somethingToShare">Something I Would Like to Share (Optional):</label>
+                <textarea id="somethingToShare" name="somethingToShare"
+                    placeholder="Something interesting"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Website Links</legend>
+
+                <label for="link1">CLT Web:</label>
+                <input type="url" id="link1" name="link1"
+                    value="https://webpages.charlotte.edu/csmit721/"
+                    placeholder="CLT Web URL">
+
+                <label for="link2">GitHub.io:</label>
+                <input type="url" id="link2" name="link2"
+                    value="https://csmit721-netizen.github.io/"
+                    placeholder="GitHub Pages URL">
+
+                <label for="link3">GitHub:</label>
+                <input type="url" id="link3" name="link3"
+                    value="https://github.com/csmit721-netizen"
+                    placeholder="GitHub URL">
+
+                <label for="link4">freeCodeCamp:</label>
+                <input type="url" id="link4" name="link4"
+                    value="https://www.freecodecamp.org/certification/christasmith/responsive-web-design"
+                    placeholder="freeCodeCamp URL">
+
+                <label for="link5">Codecademy:</label>
+                <input type="url" id="link5" name="link5"
+                    placeholder="Codecademy URL (optional)">
+
+                <label for="link6">LinkedIn:</label>
+                <input type="url" id="link6" name="link6"
+                    placeholder="LinkedIn URL (optional)">
+            </fieldset>
+
+            
+            <div class="form-buttons">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+                <button type="button" id="clear-form">Clear</button>
+            </div>
+
+            <p class="button-row">
+                <button type="button" id="gen-html">Generate HTML</button>
+                <button type="button" id="gen-json">Generate JSON</button>
+                <button type="button" id="gen-xml">Generate XML</button>
+            </p>
+        </form>
+
+        <!-- Generated HTML, JSON, and XML will appear here. -->
+        <div id="output"></div>
+
+        <!-- This displays the completed introduction page after submission. -->
+        <div id="introduction-result" hidden></div>
+    </main>
+
+    <div data-include="components/footer.html"></div>
+
+    <script src="scripts/include.min.js"></script>
+    <script src="scripts/introduction.js"></script>
+    <script src="https://divonbriesen.github.io/teaching/tools/standards-check.js" defer></script>
+</body>
+</html>
