@@ -23,6 +23,7 @@ h1 {
     margin-bottom: 5px;
 }
 
+/* The tagline class separates the short introduction from the main heading. */
 .tagline {
     color: #967A6C;
     font-family: Georgia, serif;
@@ -60,7 +61,8 @@ main {
 }
 
 section {
-    background-color: #FFFFFF;
+    /* Light pink backgrounds keep the sections consistent with the page's color scheme. */
+    background-color: #F5E7E1;
     padding: 25px;
     margin: 25px 0;
     border-radius: 12px;
@@ -81,7 +83,7 @@ li {
     margin-bottom: 8px;
 }
 
-/* Photo gallery layout */
+/* The photo-gallery class organizes the pictures into a responsive grid. */
 .photo-gallery {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -89,6 +91,7 @@ li {
     margin-top: 20px;
 }
 
+/* The figures group each picture with its caption. */
 .photo-gallery figure {
     margin: 0;
     text-align: center;
@@ -108,7 +111,7 @@ figcaption {
     padding: 10px;
 }
 
-/* Coursework section */
+/* The course-section class centers the information about my coursework. */
 .course-section {
     text-align: center;
 }
@@ -116,6 +119,7 @@ figcaption {
 .course-section a {
     display: inline-block;
     background-color: #967A6C;
+    /* White text makes the link easier to read against the brown button background. */
     color: #FFFFFF;
     padding: 10px 20px;
     border-radius: 6px;
