@@ -1,0 +1,77 @@
+{
+    "firstName": "Christa",
+    "middleName": "",
+    "nickname": "",
+    "lastName": "Smith",
+    "heading": "Christa Smith: Introduction Form",
+    "acknowledgment": "I understand that this is a public document, and I won't put anything here I wouldn't want anyone to see.",
+    "acknowledgmentDate": "8/24/2026",
+    "adjective": "Crazy",
+    "animal": "Snake",
+    "divider": "~",
+    "mascot": "Christa Smith ~ Crazy Snake",
+    "picture": "images/mirrorselfie.jpg",
+    "pictureAlt": "Digi cam mirror selfie",
+    "caption": "Digi cam mirror selfie.",
+    "personalStatement": "I am a senior computer science student with a concentration in cyber security while also working toward a minor in criminal justice. My goals include getting my Bachelor's and then working my way onto my Master's. I also plan to knock down a bunch of certifications this winter. I love going out, reading, playing guitar, and hanging out with friends. My favorite genre of music is rock. I love The Clash.",
+    "personalBackground": "Born in OKC.",
+    "professionalBackground": "I am currently a Probation Office Tech in Charlotte!",
+    "academicBackground": "Associate's in Arts, 2025.",
+    "primaryWorkComputer": "HP ZBook laptop, Windows 11, X G2i.",
+    "primaryWorkLocation": "My house.",
+    "alternateComputerLocation": "My desktop and the library.",
+    "courses": [
+        {
+            "department": "ITSC",
+            "number": "3146",
+            "title": "Introduction to Operating Systems & Networking",
+            "reason": "Requirement. I am excited to actually learn more about cybersecurity."
+        },
+        {
+            "department": "ITIS",
+            "number": "3135",
+            "title": "Front End Web Application Development",
+            "reason": "Requirement. I am really intrigued by this class."
+        },
+        {
+            "department": "ITSC",
+            "number": "4214",
+            "title": "Usable Privacy & Security",
+            "reason": "Requirement. I feel like this class will be really introspective."
+        },
+        {
+            "department": "ITSC",
+            "number": "3200",
+            "title": "Introduction to Information Security & Privacy",
+            "reason": "Requirement. I am very excited about this one because it goes more in depth into cybersecurity, which is my main focus."
+        },
+        {
+            "department": "CJUS",
+            "number": "2340",
+            "title": "Criminological Theory",
+            "reason": "Another class for my minor! I am excited because I find myself not getting disinterested at all in these classes."
+        }
+    ],
+    "quote": "“Hope is the thing with feathers…”",
+    "quoteAuthor": "Emily Dickinson",
+    "funnyItem": "",
+    "somethingToShare": "",
+    "links": [
+        {
+            "label": "CLT Web",
+            "url": "https://webpages.charlotte.edu/csmit721/"
+        },
+        {
+            "label": "GitHub.io",
+            "url": "https://csmit721-netizen.github.io/"
+        },
+        {
+            "label": "GitHub",
+            "url": "https://github.com/csmit721-netizen"
+        },
+        {
+            "label": "freeCodeCamp",
+            "url": "https://www.freecodecamp.org/certification/christasmith/responsive-web-design"
+        }
+    ]
+}

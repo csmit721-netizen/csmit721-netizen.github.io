@@ -1,6 +1,200 @@
 
-/* general page styling */
-body {
+
+/* =========================================
+   INTRODUCTION FORM
+   ========================================= */
+
+/* Main page styling */
+body.introduction-page {
+    background-color: #F2D3CB;
+    color: #4D382F;
+    font-family: Arial, sans-serif;
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Headings */
+.introduction-page h1,
+.introduction-page h2,
+.introduction-page h3,
+.introduction-page legend {
+    font-family: Georgia, "Times New Roman", serif;
+    color: #4D382F;
+}
+
+.introduction-page h2,
+.introduction-page h3 {
+    text-align: center;
+}
+
+/* Links */
+.introduction-page a:link,
+.introduction-page a:visited {
+    color: #4D382F;
+}
+
+.introduction-page a:hover,
+.introduction-page a:focus {
+    color: #967A6C;
+}
+
+/* Main content */
+.introduction-page main {
+    margin: 30px auto;
+    padding: 15px;
+}
+
+/* Form layout */
+.introduction-page form {
+    max-width: 850px;
+    margin: 25px auto;
+}
+
+/* Horizontal divider */
+.introduction-page hr,
+.introduction-page .page-divider {
+    border: 3px solid #967A6C;
+}
+
+/* Fieldsets */
+.introduction-page fieldset {
+    background-color: rgba(255, 255, 255, 0.25);
+    border: 2px solid #967A6C;
+    border-radius: 10px;
+    margin: 25px 0;
+    padding: 22px;
+}
+
+.introduction-page legend {
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+/* Form labels */
+.introduction-page label {
+    display: block;
+    font-weight: bold;
+    margin-top: 14px;
+}
+
+/* Form inputs */
+.introduction-page input,
+.introduction-page textarea {
+    box-sizing: border-box;
+    display: block;
+    font: inherit;
+    margin: 5px 0 15px;
+    max-width: 100%;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #967A6C;
+    border-radius: 5px;
+    background-color: #fffaf8;
+    color: #4D382F;
+}
+
+.introduction-page textarea {
+    min-height: 85px;
+}
+
+/* Image preview */
+.introduction-page .preview-image {
+    display: block;
+    height: auto;
+    width: 120px;
+    max-width: 100%;
+    margin: 12px auto 20px;
+    border-radius: 6px;
+}
+
+/* Course entries */
+.introduction-page .course-entry {
+    border-bottom: 1px solid #967A6C;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+}
+
+/* Buttons */
+.introduction-page button {
+    background-color: #4D382F;
+    border: 0;
+    border-radius: 6px;
+    color: #F2D3CB;
+    cursor: pointer;
+    font: inherit;
+    margin: 6px 5px;
+    padding: 10px 18px;
+}
+
+.introduction-page button:hover,
+.introduction-page button:focus {
+    background-color: #967A6C;
+}
+
+/* Form buttons */
+.introduction-page .form-buttons {
+    margin: 25px 0;
+    text-align: center;
+}
+
+/* Generate buttons */
+.introduction-page .button-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 25px auto;
+}
+
+.introduction-page .button-row button {
+    background-color: #4D382F;
+    color: #F2D3CB;
+    border: 2px solid #967A6C;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.introduction-page .button-row button:hover {
+    background-color: #967A6C;
+    /* the white is to separate the text box from the background */
+    color: #ffffff;
+}
+
+/* Generated output */
+.introduction-page #output {
+    max-width: 900px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.introduction-page #introduction-result figure {
+    text-align: center;
+}
+
+.introduction-page #introduction-result img {
+    height: auto;
+    max-width: 100%;
+    width: 300px;
+}
+
+/* Footer */
+.introduction-page footer {
+    margin-top: 40px;
+    text-align: center;
+}
+
+
+
+/* =========================================
+   CRAZY SNAKE PAGE
+   ========================================= */
+
+/* General page styling */
+body.crazy-snake-page {
     background-color: #F2D3CB;
     color: #4D382F;
     font-family: Arial, sans-serif;
@@ -9,35 +203,35 @@ body {
     padding: 0 15px;
 }
 
-/* divider */
-hr {
+/* Divider */
+.crazy-snake-page hr {
     border: 3px solid #967A6C;
     margin: 20px;
 }
 
-/* content */
-main {
+/* Content */
+.crazy-snake-page main {
     text-align: center;
     padding: 20px;
     min-height: 300px;
 }
 
-/* heading */
-h2 {
+/* Heading */
+.crazy-snake-page h2 {
     color: #4D382F;
     text-align: center;
     font-family: Georgia, serif;
 }
 
-/* description */
-main p {
+/* Description */
+.crazy-snake-page main p {
     font-family: Arial, sans-serif;
     text-align: center;
     line-height: 1.6;
 }
 
-/* snake logo image */
-.snake-logo {
+/* Snake logo image */
+.crazy-snake-page .snake-logo {
     display: block;
     width: 250px;
     max-width: 100%;
@@ -45,33 +239,159 @@ main p {
     margin: 20px auto;
 }
 
-/* links */
-nav a {
+/* Links */
+.crazy-snake-page nav a {
     color: #967A6C;
     font-weight: bold;
     text-decoration: none;
 }
 
-nav a:hover {
+.crazy-snake-page nav a:hover {
     color: #4D382F;
     text-decoration: underline;
 }
 
-/* adjusts */
-@media screen and (max-width: 600px) {
-    body {
+
+/* =========================================
+   INTRODUCTION SITE
+   ========================================= */
+
+/* General page styling */
+body.introduction-site {
+    background-color: #F2D3CB;
+    color: #4D382F;
+    font-family: Arial, sans-serif;
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Headings */
+.introduction-site h1,
+.introduction-site h2,
+.introduction-site h3 {
+    color: #4D382F;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+.introduction-site h2 {
+    text-align: center;
+}
+
+.introduction-site h3 {
+    text-align: center;
+}
+
+/* Main content */
+.introduction-site main {
+    margin: 30px auto;
+    padding: 15px;
+}
+
+/* Divider */
+.introduction-site hr,
+.introduction-site .page-divider {
+    border: 3px solid #967A6C;
+}
+
+/* Paragraphs */
+.introduction-site main p {
+    margin: 18px 0;
+    line-height: 1.7;
+}
+
+/* Centered content */
+.introduction-site .centered {
+    text-align: center;
+}
+
+/* Introduction image */
+.introduction-site figure {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.introduction-site .preview-image {
+    display: block;
+    width: 120px;
+    max-width: 100%;
+    height: auto;
+    margin: 10px auto;
+    border-radius: 6px;
+}
+
+.introduction-site figcaption {
+    margin-top: 8px;
+}
+
+/* Lists */
+.introduction-site ul,
+.introduction-site ol {
+    line-height: 1.8;
+    padding-left: 35px;
+}
+
+.introduction-site li {
+    margin-bottom: 8px;
+}
+
+/* Quote */
+.introduction-site blockquote {
+    border-left: 4px solid #967A6C;
+    margin: 25px auto;
+    padding: 10px 20px;
+    max-width: 600px;
+}
+
+/* Links */
+.introduction-site a:link,
+.introduction-site a:visited {
+    color: #4D382F;
+}
+
+.introduction-site a:hover,
+.introduction-site a:focus {
+    color: #967A6C;
+}
+
+/* Footer */
+.introduction-site footer {
+    margin-top: 40px;
+    text-align: center;
+}
+
+
+
+/* =========================================
+   RESPONSIVE STYLING
+   ========================================= */
+
+@media (max-width: 600px) {
+
+    /* Introduction Form */
+    body.introduction-page {
+        width: 94%;
+    }
+
+    .introduction-page main {
+        padding: 4px;
+    }
+
+    /* Crazy Snake */
+    body.crazy-snake-page {
         padding: 0 10px;
     }
 
-    main {
+    .crazy-snake-page main {
         padding: 10px;
     }
 
-    .snake-logo {
+    .crazy-snake-page .snake-logo {
         width: 180px;
     }
 
-    h2 {
+    .crazy-snake-page h2 {
         font-size: 1.4em;
     }
 }
